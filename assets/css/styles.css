@@ -578,3 +578,147 @@ margin-bottom: var(--mb-2);
   bottom: 0;
 }
 
+/* CONTACT */
+
+.contact__container {
+  row-gap: 3rem;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color-light);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-2);
+  border-radius: .5rem;
+}
+
+.contact ::placeholder {
+  color: var(--first-color-dark);
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+}
+
+.contact__button {
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+}
+
+.contact__info {
+  margin-bottom: var(--mb-3);
+}
+
+.contact__subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--first-color-dark);
+  margin-bottom: var(--mb-1);
+}
+
+.contact__text {
+  display: block;
+  padding-left: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--first-color-darker);
+  color: var(--first-color-lighter);
+  text-align: center;
+}
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+}
+.footer__description {
+  margin-bottom: var(--mb-2);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 770px) {
+  .home__button{
+    width: initial;
+  }
+
+  .nav__menu {
+    width: var(--nav-width)
+  }
+
+  .about__container
+  .skills__container
+  .services__container
+  .works__container
+  .contact__container
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__data {
+    text-align: initial;
+  }
+
+  .about_description {
+    margin-bottom: var(--mb-5);
+  }
+
+  .about__img {
+    width: 220px;
+  }
+
+  .about__information {
+    padding-left: 4rem;
+  }
+
+  .education__year {
+    padding: 0 2rem
+  }
+
+  .project {
+    background: none;
+  }
+  .project__container {
+    background-color: var(--first-color);
+    grid-template-columns: 2fr 1.2fr;
+    padding: 0 2rem;
+    border-radius: .5rem;
+  }
+
+  .project__data {
+    padding: 3rem 0;
+  }
+
+  .project__title .project__data {
+    text-align: initial;
+  }
+
+  .project__img {
+    width: 230px;
+    align-self: flex-end;
+  }
+
+  .contact__inputs {
+    display: grid;
+    column-gap: 1.5rem;
+  }
+
+  .contact__info {
+    padding-left: 3rem;
+  }
+
+  .footer {
+    background: none;
+  }
+
+  .footer__container {
+    background-color: var(--first-color-darker);
+    padding: 3rem 0;
+    border-radius: .5rem;
+  }
+}
+
+
