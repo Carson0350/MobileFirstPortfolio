@@ -1,7 +1,7 @@
 // MENU SHOW WHEN HIDDEN
-const navMenu = document.getElementById('nav-menu')
-const toggleMenu = document.getElementById('nav-toggle')
-const closeMenu = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu'),
+      toggleMenu = document.getElementById('nav-toggle'),
+      closeMenu = document.getElementById('nav-close')
 // SHOW
 
 toggleMenu.addEventListener('click', () => {navMenu.classList.toggle('show')})
@@ -10,9 +10,9 @@ toggleMenu.addEventListener('click', () => {navMenu.classList.toggle('show')})
 closeMenu.addEventListener('click', () => {navMenu.classList.remove('show')})
 
 // REMOVE MENU
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('.nav__link')
 
-const linkAction = () => {
+function linkAction(){
   navMenu.classList.remove('show')
 }
 
@@ -23,8 +23,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const sections = document.querySelectorAll('section[id]')
 
+window.addEventListener('scroll', scrollActive)
 
-const scrollActive = () => {
+
+function scrollActive(){
   const scrollY = window.pageYOffset
 
   sections.forEach(current => {
