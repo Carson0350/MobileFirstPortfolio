@@ -207,6 +207,7 @@ img{
   align-items: center;
   height: max-content;
   text-align: center;
+  margin: 2rem;
 }
 
 .home__img {
@@ -301,7 +302,7 @@ img{
 .about__img {
   width: 150px;
   border-radius: .5rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .about__information {
@@ -415,6 +416,18 @@ margin-bottom: var(--mb-2);
   margin-bottom: .25rem;
 }
 
+.education__race {
+  padding-left: 32px;
+}
+
+.education__university {
+  padding-right: 32px;
+}
+
+.education__specialty {
+  padding-left: 32px;
+}
+
 .education__university, .education__specialty {
   display: block;
   font-size: var(--small-font-size);
@@ -425,7 +438,7 @@ margin-bottom: var(--mb-2);
 }
 
 .edcation__time {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   justify-self: center;
 }
 
@@ -640,7 +653,7 @@ margin-bottom: var(--mb-2);
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 770px) {
 
   .home__button{
     width: initial;
@@ -650,13 +663,13 @@ margin-bottom: var(--mb-2);
     width: var(--nav-width)
   }
 
-  .about__container
-  .skills__container
-  .services__container
-  .works__container
-  .contact__container
-  .contact__inputs{
-    grid-template-columns: repeat(2, 1fr);
+  .about__container,
+  .skills__container,
+  .services__container,
+  .works__container,
+  .contact__container,
+  .contact__input {
+    grid-template-columns: repeat(2,1fr);
   }
 
   .about__data {
@@ -675,13 +688,14 @@ margin-bottom: var(--mb-2);
     padding-left: 4rem;
   }
 
-  .education__year {
-    padding: 0 2rem
+  .education__time {
+    padding: 0 2rem;
   }
 
   .project {
     background: none;
   }
+
   .project__container {
     background-color: var(--first-color);
     grid-template-columns: 2fr 1.2fr;
@@ -702,7 +716,7 @@ margin-bottom: var(--mb-2);
     align-self: flex-end;
   }
 
-  .contact__inputs {
+  .contact__input {
     display: grid;
     column-gap: 1.5rem;
   }
