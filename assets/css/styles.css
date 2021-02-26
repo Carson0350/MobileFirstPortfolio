@@ -238,7 +238,8 @@ img{
 }
 
 .home__social {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .home__social-link {
@@ -368,35 +369,35 @@ margin-bottom: var(--mb-2);
 }
 
 .skills__html {
-  width: 80%
+  width: 100%
 }
 
 .skills__js {
-  width: 90%
+  width: 70%
 }
 
 .skills__react {
   width: 70%
 }
 
-.skills__angular {
-  width: 60%
+.skills__Sass {
+  width: 80%
 }
 
-.skills__php {
-  width: 60%
+.skills__express {
+  width: 50%
 }
 
 .skills__node {
   width: 60%
 }
 
-.skills__firebase {
+.skills__sql {
   width: 60%
 }
 
-.skills__python {
-  width: 60%
+.skills__aws {
+  width: 30%
 }
 
 /* EDUCATION  */
