@@ -296,7 +296,7 @@ img{
 }
 
 .about_description {
-  margin-bottom: 3rem;
+  margin-bottom: var(--mb-4);
 }
 
 .about__img {
@@ -417,15 +417,19 @@ margin-bottom: var(--mb-2);
 }
 
 .education__race {
-  padding-left: 32px;
+  padding-left: 2rem;
 }
 
 .education__university {
-  padding-right: 32px;
+  padding-right: 2rem;
 }
 
 .education__specialty {
-  padding-left: 32px;
+  padding-left: 2rem;
+}
+
+.education__year {
+  padding-right: 2rem;
 }
 
 .education__university, .education__specialty {
@@ -653,7 +657,7 @@ margin-bottom: var(--mb-2);
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 700px) {
 
   .home__button{
     width: initial;
@@ -716,7 +720,7 @@ margin-bottom: var(--mb-2);
     align-self: flex-end;
   }
 
-  .contact__input {
+  .contact__inputs {
     display: grid;
     column-gap: 1.5rem;
   }
@@ -769,6 +773,6 @@ margin-bottom: var(--mb-2);
 
   .services__container,
   .works__container {
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
